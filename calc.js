@@ -63,7 +63,7 @@ function onClick(){
     else if(isNaN(Number(btnVal)) === true && btnVal != 'equal' && btnVal != '.'){
         operator = btnVal;
     }
-    else if(isNaN(Number(btnVal)) === false){
+    else if(!isNaN(Number(btnVal))){
         val2 += btnVal;
     }
     else if(btnVal === "."){
